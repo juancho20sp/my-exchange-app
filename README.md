@@ -1,4 +1,4 @@
-# my-exchange-app
+# My Exchange App
 This is a _basic_ web application, where you can see real data provided by [coincap](https://docs.coincap.io/?version=latest) in real time.
 
 ## External dependencies
