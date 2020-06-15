@@ -2,7 +2,7 @@
   <div class="header__container">
     <div class="logo__container">
       <router-link to="/">
-        <my-icon></my-icon>
+        <my-icon class="myIcon"></my-icon>
         <h1 class="title">My Exchange App</h1>
       </router-link>
     </div>
@@ -51,13 +51,11 @@ export default {
   height: 100%;
 
   display: flex;
-  align-items: center;
 }
 
 .logo__container {
   margin-left: 15px;
 
-  max-width: 20%;
   color: #fff;
 
   display: flex;
@@ -74,12 +72,15 @@ export default {
   width: 20%;
 
   margin-left: 20px;
+
+  display: flex;
 }
 
 .menu {
   list-style: none;
 
   display: flex;
+  flex: 1;
 }
 
 .menu__item {
@@ -98,5 +99,64 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo__container {
+    width: 35%;
+  }
+  .menu__container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .logo__container {
+    width: 40%;
+  }
+  .menu__container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .logo__container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .logo__container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header {
+    height: 6rem;
+  }
+
+  .header__container {
+    display: block;
+  }
+
+  .logo__container {
+    width: auto;
+    margin: 0px;
+    padding-top: 15px;
+    height: 40%;
+    justify-content: center;
+  }
+
+  .menu__container {
+    width: auto;
+    height: 40%;
+    margin-top: 2%;
+  }
+
+  #image0 {
+    max-width: 15%;
+  }
+}
+@media screen and (max-width: 320px) {
 }
 </style>
